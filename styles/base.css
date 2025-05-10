@@ -1,0 +1,158 @@
+/* ✅ Import your selected Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0.75em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffd700;
+    color: #222;
+    border-radius: 5px;
+}
+
+/* Main content layout */
+main.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card styles */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #0d3b66;
+}
+
+/* Bio section */
+.bio {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.bio img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+/* Location section */
+.location {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.location img {
+    width: 80px;
+}
+
+.location p {
+    margin: 0;
+}
+
+/* Resources */
+.resources img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.resources ul {
+    padding-left: 1.25em;
+}
+
+.resources li {
+    margin-bottom: 0.5em;
+}
+
+.resources li a {
+    color: #0d3b66;
+    text-decoration: none;
+}
+
+.resources li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0d3b66;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer p:last-child {
+    color: #ffd700;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    main.grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bio,
+    .location {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

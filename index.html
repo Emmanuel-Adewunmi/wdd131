@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Odedina </title>
+    <meta name="description" content="Emmanuel Odedina - WDD 131 Dynamic Web Fundamentals | Home Page showcasing dynamic web development skills, personal introduction, and coursework projects. Learn more about my journey in HTML, CSS, and responsive design.">
+    <meta name="author" content="Emmanuel Odedina">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Emmanuel Odedina</h1>
+    <header>
+        <h1>WDD 131:Dynamic Web Fundamentals - Emmanuel A. Odedina</h1>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com/in/emmanuel-odedina" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/48?lang=eng&id=p17#p17" target="_blank">Scripture</a> </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-layout">
+        <section class="card ">
+            <h2> About me</h2>
+            <div class="bio">
+                <img src="images/profile.jpg" alt="Emmanuel Odedina, a freelance UX Designer and aspiring web developer">
+                <p>Hello! My name is Emmanuel Odedina, and I call the vibrant city of Lagos, Nigeria, home. In my leisure time, I find
+                    joy in the pages of a good book, the thrill of a football match, and the immersive experience of movies. Professionally,
+                    I work as a freelance UX Designer, where I focus on creating user-centered and intuitive digital experiences. To
+                    complement my design skills and broaden my technical expertise, I've embarked on a journey to earn a software
+                    development degree through the flexible and enriching BYU Pathway program. I am deeply grateful for this incredible
+                    opportunity to receive a world-class education at an accessible cost.
+                    As part of my WDD 131 coursework, I am building a strong foundation in dynamic web fundamentals, including HTML, CSS, and
+                    Javascript. I'm excited to apply these skills in future projects.</p>
+            </div>
+            <h3>Lagos, Nigeria</h3>
+            <div class="location">
+                <img src="images/official-nigerian-flag.jpg" alt="Official Flag of The Federal Republic of Nigeria" loading="lazy">
+                <p><em>Official Flag of Nigeria</em></p>
+                <p>Nigeria officially the Federal Republic of Nigeria, is a country in West Africa. It is situated between the Sahel
+                to the north and the Gulf of Guinea in the Atlantic Ocean to the south. It covers an area of 923,769 square kilometres
+                (356,669 sq mi). With a population of more than 230 million, it is the most populous country in Africa, and the world's
+                sixth-most populous country. Nigeria borders Niger in the north, Chad in the northeast, Cameroon in the east, and Benin
+                in the west. Nigeria is a federal republic comprising 36 states and the Federal Capital Territory, where its capital,
+                Abuja, is located. The largest city in Nigeria by population is Lagos, one of the largest metropolitan areas in the
+                world and the largest in Africa.</p>
+            </div>
+        </section>
+
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <img src="images/help.jpg" alt="Find help using these resources">
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🏰Emmanuel Odedina 🌍 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
