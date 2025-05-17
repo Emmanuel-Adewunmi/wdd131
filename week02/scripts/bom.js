@@ -5,7 +5,7 @@ const list = document.querySelector('ul');
 
 // 2. Add event listener to the Add Chapter button
 button.addEventListener('click', function () {
-    // 3. Check if input is not blank
+// 3. Check if input is not blank
     if (input.value.trim() !== '') {
         // 4. Create list item and delete button
         const li = document.createElement('li');
