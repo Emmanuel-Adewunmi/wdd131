@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Nigeria </title>
+    <meta name="description" content="Emmanuel Odedina - WDD 131 Dynamic Web Fundamentals | Country Page showcasing dynamic web development skills such as HTML, CSS, JavaScript and responsive design.">
+    <meta name="author" content="Emmanuel Odedina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <img src="images/hero-large.webp" alt="Lagos Island Idumota view">
+        </picture>
+        
+        <section class="info"> 
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 923 769</li>
+                    <li><strong>Population:</strong> 236 747 130</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Languages:</strong> English, Yoruba, Pidgin Hausa, Fulani</li>
+                    <li><strong>Currency:</strong> Naira</li>
+                    <li><strong>Time Zone:</strong> UTC+01:00(WAT) </li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                    <li><strong>Internet TLD:</strong> .ng</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2>Weather</h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">26.9°C</span> </li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind">7.2</span>km/h</li>
+                    <li><strong>Wind Chill:</strong><span id="windChil"> N/A</span></li>
+                </ul>
+                <img src="images/weather-icon.svg" class="svg" alt="Weather icon">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🏰Emmanuel Odedina 🌍 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
