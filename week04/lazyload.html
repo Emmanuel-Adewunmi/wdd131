@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyloading</title>
+    <meta name="description" content="Emmanuel Odedina - WDD 131 Dynamic Web Fundamentals | Lazyloading using HTML, CSS, JavaScript.">
+    <meta name="author" content="Emmanuel Odedina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading Image Demo</h1>
+        <img src="https://picsum.photos/id/1011/400/600" alt="Mountain" loading="lazy" width="400" height="600">
+        <img src="https://picsum.photos/id/1015/400/600" alt="River" loading="lazy" width="400" height="600">
+        <img src="https://picsum.photos/id/1016/400/600" alt="Forest" loading="lazy" width="400" height="600">
+        <img src="https://picsum.photos/id/1018/400/600" alt="Bridge" loading="lazy" width="400" height="600">
+        <img src="https://picsum.photos/id/1020/400/600" alt="Lake" loading="lazy" width="400" height="600">
+        <img src="https://picsum.photos/id/1021/400/600" alt="Field" loading="lazy" width="400" height="600">
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🏰Emmanuel Odedina 🌍 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
