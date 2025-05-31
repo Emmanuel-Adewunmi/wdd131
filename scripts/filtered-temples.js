@@ -16,67 +16,54 @@ hamburger.addEventListener('click', () => {
 // Temple data array (12 temples, includes 3+ extras)
 const temples = [
     {
-        name: "Salt Lake Temple",
-        location: "Salt Lake City, Utah, USA",
-        dedicated: "1893-04-06",
-        area: 253015,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
-    },
-    {
-        name: "Rome Italy Temple",
-        location: "Rome, Italy",
-        dedicated: "2019-03-10",
-        area: 41010,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
-    },
-    {
-        name: "Manila Philippines Temple",
-        location: "Manila, Philippines",
-        dedicated: "1984-09-25",
-        area: 26783,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
-    },
-    {
-        name: "Aba Nigeria Temple",
+        name: "Aba Nigeria",
         location: "Aba, Nigeria",
         dedicated: "2005-08-07",
         area: 11500,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
     },
     {
-        name: "Accra Ghana Temple",
-        location: "Accra, Ghana",
-        dedicated: "2004-01-11",
-        area: 17000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
+        name: "Manti Utah",
+        location: "Manti, Utah, United States",
+        dedicated: "1888-05-21",
+        area: 74792,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-40551-main.jpg"
     },
     {
-        name: "Rexburg Idaho Temple",
-        location: "Rexburg, Idaho, USA",
-        dedicated: "2008-02-10",
-        area: 57000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rexburg-idaho-temple/rexburg-idaho-temple-1057-main.jpg"
+        name: "Payson Utah",
+        location: "Payson, Utah, United States",
+        dedicated: "2015-06-07",
+        area: 96630,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-38451-main.jpg"
     },
     {
-        name: "Paris France Temple",
-        location: "Paris, France",
-        dedicated: "2017-05-21",
-        area: 44000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
+        name: "Yigo Guam",
+        location: "Yigo Guam",
+        dedicated: "2020-05-02",
+        area: 6861,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
+    },
+    
+    {
+        name: "Washington D.C.",
+        location: "Kensington, Maryland, United States",
+        dedicated: "1974-11-19",
+        area: 156558,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-14992-main.jpg"
     },
     {
-        name: "Frankfurt Germany Temple",
-        location: "Frankfurt, Germany",
-        dedicated: "1987-08-28",
-        area: 21500,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-38924-main.jpg"
+        name: "Lima Perú",
+        location: "Lima Perú",
+        dedicated: "1986-01-10",
+        area: 9600,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-12721-main.jpg"
     },
     {
-        name: "Sydney Australia Temple",
-        location: "Sydney, Australia",
-        dedicated: "1984-09-20",
-        area: 30777,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/sydney-australia-temple/sydney-australia-temple-43342-main.jpg"
+        name: "Mexico City Mexico",
+        location: "Mexico City Mexico",
+        dedicated: "1983-12-02",
+        area: 116642,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/mexico-city-mexico-temple/mexico-city-mexico-temple-4060-main.jpg"
     },
     // Additional temples
     {
