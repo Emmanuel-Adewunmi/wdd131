@@ -1,0 +1,25 @@
+/* Large Screen Enhancements (min-width: 768px) */
+
+@media (min-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+        flex-wrap: nowrap;
+    }
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        background: none;
+        text-align: right;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
