@@ -17,14 +17,14 @@
     <form method="get" action="review.html">
         <h1>Product Review</h1>
         <!-- Product Name -->
-        <label for="product">Product Name</label>
+        <label for="product">Product Name<span class="required">*</span></label>
         <select id="product" name="product" required aria-required="true">
             <option value="" disabled selected>Select a Product ...</option>
         </select>
         
         <!-- Rating -->
         <fieldset>
-            <legend>Overall Rating</legend>
+            <legend>Overall Rating<span class="required">*</span></legend>
             <label><input type="radio" name="rating" id="star1" value="1" required> ★</label>
             <label><input type="radio" name="rating" id="star2" value="2"> ★★</label>
             <label><input type="radio" name="rating" id="star3" value="3"> ★★★</label>
@@ -33,7 +33,7 @@
         </fieldset>
         
         <!-- Date of Installation -->
-        <label for="installationDate">Date of Installation</label>
+        <label for="installationDate">Date of Installation<span class="required">*</span></label>
         <input type="date" id="installationDate" name="installationDate" required aria-required="true">
         
         <!-- Features -->

@@ -6,7 +6,7 @@ body {
 }
 
 form {
-    background: #fff;
+    background: #d4d1d1;
     padding: 20px;
     max-width: 500px;
     margin: 0 auto;
@@ -32,7 +32,7 @@ legend {
 }
 
 .required {
-    color: red;
+    color: rgb(168, 24, 24);
 }
 
 input[type="text"],
