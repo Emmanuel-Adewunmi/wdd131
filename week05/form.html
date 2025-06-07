@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Emmanuel Odedina - WDD 131 Dynamic Web Fundamentals |Week 05 Project|">
+    <meta name="author" content="Emmanuel Odedina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <form method="get" action="review.html">
+        <h1>Product Review</h1>
+        <!-- Product Name -->
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required aria-required="true">
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+        
+        <!-- Rating -->
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label><input type="radio" name="rating" id="star1" value="1" required> ★</label>
+            <label><input type="radio" name="rating" id="star2" value="2"> ★★</label>
+            <label><input type="radio" name="rating" id="star3" value="3"> ★★★</label>
+            <label><input type="radio" name="rating" id="star4" value="4"> ★★★★</label>
+            <label><input type="radio" name="rating" id="star5" value="5"> ★★★★★</label>
+        </fieldset>
+        
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" required aria-required="true">
+        
+        <!-- Features -->
+        <fieldset>
+            <legend>Which features did you find useful? (Check all that apply)</legend>
+            <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+            <label><input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+        </fieldset>
+        
+        <!-- Review -->
+        <label for="review">Written Review (Optional)</label>
+        <textarea id="review" name="review"></textarea>
+        
+        <!-- User Name -->
+        <label for="username">Your Name (Optional)</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Submit -->
+        <input type="submit" value="Post Review">
+ 
+    </form>
+    
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🏰Emmanuel Odedina 🌍 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
