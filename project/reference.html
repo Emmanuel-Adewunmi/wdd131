@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija Kitchen | References</title>
+    <meta name="description" content="Emmanuel Odedina - Small Business Restaurant Reference Page">
+    <meta name="author" content="Emmanuel Odedina">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" as="font"
+        type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Naija Kitchen</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reference.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>References</h1>
+            <ul>
+                <li>“Top Nigerian Dishes.” TasteAtlas, https://www.tasteatlas.com/most-popular-food-in-nigeria.</li>
+                <li>“The Story of Jollof Rice.” BBC Food, https://www.bbc.com/food/articles/the_story_of_jollof_rice.
+                </li>
+                <li>Images sourced from Pexels and Unsplash under free use licenses.</li>
+                <li>Contact form concept adapted from MDN Web Docs on form validation and localStorage.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Naija Kitchen | Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+    <script>
+        // Specific script for reference.html to ensure navigation and footer functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            setCurrentYear();
+            setLastModified();
+            setupMenuToggle(); // This activates the hamburger menu
+        });
+    </script>
+</body>
+
+</html>

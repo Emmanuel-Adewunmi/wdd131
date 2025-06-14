@@ -1,0 +1,135 @@
+/* Hero Section (Homepage only) */
+.hero {
+
+    position: relative;
+
+    text-align: center;
+}
+
+.hero img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+.hero-text {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    padding: 1rem;
+
+    border-radius: 8px;
+
+    max-width: 90%;
+}
+
+/* New: About Us section image styling */
+#about {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text on small screens */
+    align-items: center;
+    gap: 1.5rem;
+    /* Space between image and text */
+}
+
+#about h2 {
+    width: 100%;
+    /* Ensure heading takes full width */
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text on small screens */
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    /* Make image responsive */
+    max-width: 300px;
+    /* Limit max size */
+    height: auto;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    object-fit: cover;
+    /* Ensures image covers area without distortion */
+}
+
+.map-container {
+    width: 100%;
+    /* Ensures the container takes full available width */
+    margin-top: 1rem;
+    /* Adds some space above the map */
+}
+
+/* Make the iframe responsive */
+.map-container iframe {
+    display: block;
+    /* Removes any extra space below the iframe */
+    width: 100%;
+    /* Ensures the iframe takes 100% width of its container */
+    height: 450px;
+    /* Sets a default height */
+    border: 0;
+    /* Removes default iframe border */
+}
+
+/* Adjust height for smaller screens if needed */
+@media (max-width: 600px) {
+    .map-container iframe {
+        height: 300px;
+        /* Example: reduce height on smaller screens for better fit */
+    } }
+/*
+  ===== MEDIA QUERIES FOR RESPONSIVENESS ===== */
+
+/* Medium screens (e.g., landscape mobile, tablets) */
+@media (min-width: 600px) {
+
+    /* For About Us section */
+    #about {
+        flex-direction: row;
+        /* Side-by-side layout for larger screens */
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #about p {
+        flex: 1;
+        /* Allow text to take available space */
+    }
+
+    .about-image {
+        max-width: 40%;
+        /* Adjust image size for side-by-side layout */
+    }
+}
+
+/* Large screens (e.g., desktop) */
+@media (min-width: 900px) {
+    .about-image {
+        max-width: 30%;
+        /* Further adjust for very large screens */
+    } }

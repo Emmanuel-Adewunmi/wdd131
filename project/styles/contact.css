@@ -1,0 +1,11 @@
+/* Additional contact form layout */
+.form-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #007a33;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija Kitchen | Home</title>
+    <meta name="description"
+        content="Explore authentic Nigerian dishes at Naija Kitchen - modern twists on classic flavors.">
+    <meta name="author" content="Emmanuel Odedina">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" as="font"
+        type="font/woff2" crossorigin>
+
+    <link rel="preload" as="image" href="images/hero-image.webp">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Naija Kitchen</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav class="nav-container" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reference.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-image.webp" type="image/webp">
+                <img src="images/hero-image.jpg"
+                    alt="Table filled with a variety of Nigerian dishes including jollof rice and suya" width="1200"
+                    height="800">
+            </picture>
+            <div class="hero-text">
+                <h1>Welcome to Naija Kitchen</h1>
+                <p>Authentic Nigerian cuisine with a modern twist.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="images/about-us.webp" alt="Naija Kitchen team or traditional cooking scene" loading="lazy"
+                    class="about-image" width="600" height="400">
+                <p>
+                    At Naija Kitchen, we bring the vibrant flavors of Nigeria to your plate. From jollof rice to pepper
+                    soup, our family-owned restaurant is proud to share the rich heritage of Nigerian cuisine with the
+                    local community.
+                </p>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31705.145341620686!2d3.3739189!3d6.6291339!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1749908832997!5m2!1sen!2sng"
+                    width="100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Naija Kitchen Restaurant Location Map">
+                </iframe>
+            </div>
+            <address>
+                <p>123 Felicia Street Olowora, Lagos, Nigeria</p>
+                <p>Open: Monday – Saturday | 09:00 AM – 10:00 PM</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Naija Kitchen | Last updated: <span id="lastModified"></span></p>
+        <p><a href="reference.html">References</a></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</body>
+
+</html>
